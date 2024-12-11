@@ -6,7 +6,7 @@ function Experience() {
   const experiences = t("workExperience", { returnObjects: true });
 
   return (
-    <section className="py-12 bg-gray-100 h-full dark:bg-gray-800">
+    <section className="py-12 bg-gray-100 h-full min-h-screen dark:bg-gray-800">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
           {t("header.experience")}
