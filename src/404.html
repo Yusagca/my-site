@@ -1,0 +1,8 @@
+<script>
+    // Eğer tarayıcı bir route bulamazsa, ana sayfaya yönlendirin
+    var path = window.location.pathname;
+    if (!path.startsWith('/index.html')) {
+      window.location.replace('/');
+    }
+  </script>
+  
