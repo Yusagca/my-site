@@ -10,15 +10,25 @@ import { useTranslation } from "react-i18next";
 import "./i18n";
 
 function App() {
-
   const { i18n } = useTranslation();
 
+  // Dark Mode State
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Dark Mode Toggle Logic
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
     <Router>
-      <div className="font-sans bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 h">
+      <div className={`font-sans bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen`}>
         {/* Header */}
-        <Header/>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
         {/* Routes */}
         <Routes>
@@ -27,6 +37,8 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
+
+        {/* Footer */}
         <Footer />
       </div>
     </Router>
