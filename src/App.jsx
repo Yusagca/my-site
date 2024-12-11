@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import IdentityCard from "./components/IdentityCard";
-import SocialPreview from "./components/SocialPreview";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
