@@ -37,11 +37,11 @@ function Header() {
 
         {/* Navigation */}
         <nav
-          className={`md:flex md:items-center md:space-x-4 h-full w-full md:w-auto absolute md:static top-16 left-0 bg-blue-500 dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent transition-transform transform ${
+          className={`md:flex md:items-center md:space-x-4 h-auto w-full md:w-auto absolute md:static top-16 left-0 bg-blue-500 dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent transition-transform transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0 z-50`}
         >
-          <div className="flex h-full flex-col md:flex-row md:items-center md:space-x-4">
+          <div className="flex flex-col h-full md:flex-row md:items-center md:space-x-4">
             {/* Links */}
             <Link
               to="/"
@@ -74,7 +74,7 @@ function Header() {
           </div>
 
           {/* Language Buttons */}
-          <div className="flex flex-row items-center h-full justify-center md:space-x-4">
+          <div className="flex h-full flex-row items-center justify-center md:space-x-4">
             <button
               onClick={() => i18n.changeLanguage("en")}
               className="h-full px-4 py-2 md:py-0 font-bold flex items-center hover:bg-[#001c69] hover:text-[#ca0629] transition-all text-center"
