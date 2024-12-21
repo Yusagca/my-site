@@ -18,9 +18,6 @@ function IdentityCard() {
                 {/* Sağ Bölüm: Bilgiler */}
                 <div className="md:w-2/3 space-y-2">
                     <p className="text-gray-700 dark:text-gray-300">
-                        <span className="font-bold">Adres(Adress):</span> {personal.address}
-                    </p>
-                    <p className="text-gray-700 dark:text-gray-300">
                         <span className="font-bold">Telefon Numarası(Phone Number):</span> {personal.phone}
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
