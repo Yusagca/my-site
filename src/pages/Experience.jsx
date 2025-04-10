@@ -20,7 +20,7 @@ function Experience() {
 
       <div className="relative">
         {/* Timeline çizgisi */}
-        <div className="absolute left-[20px] top-0 w-2 h-full bg-indigo-600 dark:bg-indigo-400 z-50" />
+        <div className="absolute left-[20px] top-0 w-2 h-full bg-indigo-600 dark:bg-indigo-400 z-40" />
         <div className="space-y-16 relative z-10">
           {experiences.map((exp, index) => (
             <motion.div
