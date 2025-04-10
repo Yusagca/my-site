@@ -1,105 +1,151 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import "../i18n";
-import { MdDarkMode, MdLightMode, MdMenu, MdClose } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
-function Header() {
+function Header({ darkMode, setDarkMode }) {
   const { t, i18n } = useTranslation();
-  const [darkMode, setDarkMode] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
+
+  const menuItems = ["home", "projects", "skills", "experience"];
 
   return (
-    <header className="bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-100 h-16 shadow-md">
-      <div className="container mx-auto flex justify-between items-center h-full px-4">
-        {/* Title */}
-        <h1 className="text-2xl dark:text-blue-400 font-bold">
-          {t("header.title")}
-        </h1>
-
-        {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-2xl focus:outline-none"
-          >
-            {isMenuOpen ? <MdClose /> : <MdMenu />}
-          </button>
-        </div>
-
-        {/* Navigation */}
-        <nav
-          className={`md:flex md:items-center md:space-x-4 h-full w-full md:w-auto absolute md:static top-16 left-0 bg-blue-500 dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent transition-transform transform ${
-            isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:translate-x-0 z-50`}
+    <motion.header
+      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled
+          ? "bg-white/40 backdrop-blur-lg shadow-sm dark:bg-black/40"
+          : "bg-transparent"
+        }`}
+      initial={{ y: -60 }}
+      animate={{ y: 0 }}
+    >
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="text-3xl font-extrabold tracking-tight text-black dark:text-white"
+          onClick={closeMenu}
         >
-          <div className="flex flex-col h-full md:flex-row md:items-center md:space-x-4">
-            {/* Links */}
+          halilyusa<span className="text-indigo-600">.</span>
+        </Link>
+
+        {/* Desktop menu */}
+        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700 dark:text-gray-200">
+          {menuItems.map((item) => (
             <Link
-              to="/"
-              className="h-full flex items-center px-4 py-2 md:py-0 hover:bg-blue-600 dark:hover:bg-gray-700 transition-all text-center"
-              onClick={() => setIsMenuOpen(false)}
+              key={item}
+              to={`/${item === "home" ? "" : item}`}
+              className="relative group transition-all duration-200"
             >
-              {t("header.home")}
+              <span>{t(`header.${item}`)}</span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link
-              to="/projects"
-              className="h-full flex items-center px-4 py-2 md:py-0 hover:bg-blue-600 dark:hover:bg-gray-700 transition-all text-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("header.projects")}
-            </Link>
-            <Link
-              to="/skills"
-              className="h-full flex items-center px-4 py-2 md:py-0 hover:bg-blue-600 dark:hover:bg-gray-700 transition-all text-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("header.skills")}
-            </Link>
-            <Link
-              to="/experience"
-              className="h-full flex items-center px-4 py-2 md:py-0 hover:bg-blue-600 dark:hover:bg-gray-700 transition-all text-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("header.experience")}
-            </Link>
-            <div className="flex h-full flex-row items-center justify-center md:space-x-4">
+          ))}
+
+          {/* Language */}
+          <div className="flex items-center space-x-2 ml-4">
             <button
               onClick={() => i18n.changeLanguage("en")}
-              className="h-full px-4 py-2 md:py-0 font-bold flex items-center hover:bg-[#001c69] hover:text-[#ca0629] transition-all text-center"
+              className="hover:text-indigo-600 transition"
             >
               EN
             </button>
             <button
               onClick={() => i18n.changeLanguage("tr")}
-              className="h-full px-4 py-2 md:py-0 font-bold flex items-center hover:bg-[#e30a17] transition-all text-center"
+              className="hover:text-indigo-600 transition"
             >
               TR
             </button>
-            <button
+          </div>
+
+          {/* Dark Mode */}
+          <button
             onClick={() => setDarkMode(!darkMode)}
-            className="h-full px-4 py-2 md:py-0 flex items-center hover:bg-blue-600 dark:hover:bg-gray-700 transition-all"
+            className="text-xl ml-4 hover:text-indigo-600"
           >
             {darkMode ? <MdLightMode /> : <MdDarkMode />}
           </button>
-          </div>
-          </div>
-
-          {/* Language Buttons */}
-          
-
-          {/* Dark Mode Toggle */}
         </nav>
+
+        {/* Mobile Menü Icon */}
+        <div className="md:hidden flex items-center gap-4">
+
+          {/* Dil Seçimi */}
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => {
+                i18n.changeLanguage("en");
+                closeMenu();
+              }}
+              className="hover:text-indigo-600 transition"
+            >
+              EN
+            </button>
+            <button
+              onClick={() => {
+                i18n.changeLanguage("tr");
+                closeMenu();
+              }}
+              className="hover:text-indigo-600 transition"
+            >
+              TR
+            </button>
+          </div>
+                    {/* Dark Mode (mobilde de görünsün) */}
+                    <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="text-xl text-black dark:text-white hover:text-indigo-600"
+          >
+            {darkMode ? <MdLightMode /> : <MdDarkMode />}
+          </button>
+
+          <button
+            onClick={toggleMenu}
+            className="text-black dark:text-white text-2xl"
+            aria-label="menu"
+          >
+            {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+        </div>
       </div>
-    </header>
+
+      {/* Mobil Menü */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden bg-white dark:bg-black px-6 pb-6 pt-2 text-sm font-medium text-gray-700 dark:text-gray-200 space-y-4"
+          >
+            {menuItems.map((item) => (
+              <Link
+                key={item}
+                to={`/${item === "home" ? "" : item}`}
+                onClick={closeMenu}
+                className="block transition hover:text-indigo-600"
+              >
+                {t(`header.${item}`)}
+              </Link>
+            ))}
+
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 }
 

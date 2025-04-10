@@ -10,18 +10,21 @@ const resources = {
                 home: "Home",
                 projects: "Projects",
                 skills: "Skills",
-                experience: "Experience"
+                experience: "Experience",
+                social:"SOCIAL",
+                about:"About Me",
+                aboutDet:"Everything about me."
             },
             personal: {
                 hi: "Hi!",
                 name: "Halil Yuşa Ağca",
-                address: "Maresal Çakmak Mh. 589. Sk. No: 11 / 4, Güngören/İstanbul",
+                address: "Güngören/İstanbul",
                 phone: "05535272092",
                 email: "hyagca@hotmail.com",
                 dateOfBirth: "09-09-2003",
                 placeOfBirth: "Istanbul",
                 gender: "Male",
-                maritalStatus: "MARRİED AND LOVES HİS WİFE SO MUCH(LOVE YOU AMİNEMMM)",
+                maritalStatus: "Single",
                 militaryStatus: "Not Completed",
                 driverLicense: "B",
                 linkedin: "https://www.linkedin.com/in/halil-yusa-a%C4%9Fca-26197b1b6/",
@@ -30,10 +33,12 @@ const resources = {
                 descriptionGit:"Explore my projects and repositories on GitHub."
             },
             summary: "Hello my name is Halil. As a final year Computer Engineering student, I am a passionate individual in the field of technology and software development. In my third year, I worked part-time as a hybrid front-end developer at a company that develops cloud security systems. During this process, I gained experience in developing modern and user-friendly web applications using HTML, CSS, JavaScript, TailwindCSS, TypeScript and React. I continue to add value to software projects with my dynamic problem-solving skills and tendency to teamwork.You can learn everything projects me on this site I developed. You can test the sample projects I have made.",
-            interests: ["Fitness", "Technology", "Motor Sports"],
-            languages: ["English", "German"],
+            interests: ["Fitness", "Technology", "Motor Sports","Football","Cars","Watches","Shoes"],
+            languages: ["English [B1]", "German [A2]"],
             visit:"Visit",
             footer:"This site created and developed by Halil Yuşa Ağca.",
+            interestsTitle:"İnterests",
+            languagesTitle:"Languages",
             workExperience: [
                 {
                     position: "React Intern",
@@ -66,11 +71,11 @@ const resources = {
                     "name": "Weather App",
                     "description": "The Weather App is a React-based application that provides real-time weather updates using the Open-Meteo API. The app allows users to search for a city's weather conditions, including temperature, precipitation, and wind speed, while displaying a dynamic video background based on weather conditions.",
                     "images": [
-                        { "src": "assets/weather/cloudy.png", "alt": "Cloudy" },
-                        { "src": "assets/weather/fog.png", "alt": "Foggy" },
-                        { "src": "assets/weather/sunny.png", "alt": "Sunny" },
-                        { "src": "assets/weather/rain.png", "alt": "Rainy" },
-                        { "src": "assets/weather/snow.png", "alt": "Snowy" }
+                        { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
+                        { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
+                        { "src": "public/assets/weather/sunny.png", "alt": "Sunny" },
+                        { "src": "public/assets/weather/rain.png", "alt": "Rainy" },
+                        { "src": "public/assets/weather/snow.png", "alt": "Snowy" }
                     ],
                     "url": "https://weatherapp-blond-two.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
@@ -79,12 +84,12 @@ const resources = {
                     "name": "Quiz App",
                     "description": "The Quiz App is a React-based interactive quiz platform that fetches questions from the Open Trivia Database (OpenTDB). Users can customize the quiz by selecting the number of questions, categories, and difficulty levels. The app includes features like a countdown timer, real-time feedback for answers, and score tracking.",
                     "images": [
-                        { "src": "assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
-                        { "src": "assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
-                        { "src": "assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
-                        { "src": "assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
-                        { "src": "assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
-                        { "src": "assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
+                        { "src": "public/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
+                        { "src": "public/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
+                        { "src": "public/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
+                        { "src": "public/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
+                        { "src": "public/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
+                        { "src": "public/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
 
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
@@ -112,18 +117,21 @@ const resources = {
                 home: "Ana Sayfa",
                 projects: "Projelerim",
                 skills: "Yetenekler",
-                experience: "Deneyim"
+                experience: "Deneyim",
+                social:"Sosyal",
+                about:"Hakkımda",
+                aboutDet:"Benim hakkımda her şeyi burada bulabilirsiniz."
             },
             personal: {
                 hi: "Merhaba!",
                 name: "Halil Yuşa Ağca",
-                address: "Mareşal Çakmak Mh. 589. Sk. No: 11 / 4, Güngören/İstanbul",
+                address: "Güngören/İstanbul",
                 phone: "05535272092",
                 email: "hyagca@hotmail.com",
                 dateOfBirth: "09-09-2003",
                 placeOfBirth: "İstanbul",
                 gender: "Erkek",
-                maritalStatus: "EVLİ VE KARISINA AŞIK (AMİNEMM SENİ ÇOK SEVİYORUM)",
+                maritalStatus: "Bekar",
                 militaryStatus: "Yapmadı",
                 driverLicense: "B",
                 linkedin: "https://www.linkedin.com/in/halil-yusa-a%C4%9Fca-26197b1b6/",
@@ -132,10 +140,12 @@ const resources = {
                 descriptionGit:"Projelerime ve Repolarıma göz atın."
             },
             summary: "Merhaba ben Halil. Son sınıf Bilgisayar Mühendisliği öğrencisi olarak teknoloji ve yazılım geliştirme alanında tutkulu bir bireyim. Üçüncü sınıfta, bulut güvenlik sistemleri geliştiren bir firmada yarı zamanlı hybrid bir front-end developer olarak çalıştım. Bu süreçte HTML, CSS, JavaScript, TailwindCSS, TypeScript ve React kullanarak modern ve kullanıcı dostu web uygulamaları geliştirme deneyimi kazandım. Dinamik problem çözme becerilerim ve ekip çalışmasına yatkınlığım ile yazılım projelerine değer katmaya devam ediyorum.Kendi geliştirdiğim bu sitede benimle ilgili her şeyi öğrenebilirsiniz. Yaptığım örnek projeleri test edebilirsiniz.",
-            interests: ["Fitness", "Teknoloji", "Motor Sporları"],
-            languages: ["İngilizce", "Almanca"],
+            interests: ["Fitness", "Teknoloji", "Motor Sporları","Futbol","Arabalar","Saatler","Ayakkabılar"],
+            languages: ["İngilizce [B1]", "Almanca [A2]"],
             visit:"Git",
             footer:"Bu site Halil Yuşa Ağca tarafından hazırlanıp geliştirilmiştir.",
+            interestsTitle:"İlgi Alanları",
+            languagesTitle:"Diller",
             workExperience: [
                 {
                     position: "React Stajyer",
@@ -168,11 +178,11 @@ const resources = {
                     "name": "Weather App",
                     "description": "Hava Durumu Uygulaması, Open-Meteo API kullanarak gerçek zamanlı hava durumu güncellemeleri sağlayan React tabanlı bir uygulamadır. Kullanıcılar, bir şehrin hava durumu koşullarını (sıcaklık, yağış, rüzgar hızı gibi) arayabilir ve hava durumuna göre değişen dinamik bir video arka planıyla görüntüleyebilir.",
                     "images": [
-                        { "src": "assets/weather/cloudy.png", "alt": "Cloudy" },
-                        { "src": "assets/weather/fog.png", "alt": "Foggy" },
-                        { "src": "assets/weather/sunny.png", "alt": "Sunny" },
-                        { "src": "assets/weather/rain.png", "alt": "Rainy" },
-                        { "src": "assets/weather/snow.png", "alt": "Snowy" }
+                        { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
+                        { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
+                        { "src": "public/assets/weather/sunny.png", "alt": "Sunny" },
+                        { "src": "public/assets/weather/rain.png", "alt": "Rainy" },
+                        { "src": "public/assets/weather/snow.png", "alt": "Snowy" }
                     ],
                     "url": "https://weatherapp-blond-two.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
@@ -181,12 +191,12 @@ const resources = {
                     "name": "Quiz App",
                     "description": "Quiz Uygulaması, Open Trivia Database (OpenTDB) üzerinden sorular getiren, React tabanlı bir interaktif quiz platformudur. Kullanıcılar, soru sayısını, kategoriyi ve zorluk seviyesini seçerek kendi quizlerini oluşturabilir. Uygulama; geri sayım sayacı, cevaplar için anlık geri bildirim ve puan takibi gibi özellikler sunar.",
                     "images": [
-                        { "src": "assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
-                        { "src": "assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
-                        { "src": "assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
-                        { "src": "assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
-                        { "src": "assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
-                        { "src": "assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
+                        { "src": "public/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
+                        { "src": "public/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
+                        { "src": "public/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
+                        { "src": "public/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
+                        { "src": "public/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
+                        { "src": "public/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
 
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",

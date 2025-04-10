@@ -1,115 +1,120 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
-import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { motion, useInView } from "framer-motion";
 
 function Projects() {
   const { t } = useTranslation();
-  const projectData = t("projects", { returnObjects: true }); // Dil dosyasından proje verilerini alıyoruz
+  const projectData = t("projects", { returnObjects: true });
 
-  // Kart açık/kapalı durumlarını yönetmek için state
-  const [openCards, setOpenCards] = useState({});
+  const scrollRef = useRef(null);
+  const cardRefs = useRef([]);
 
-  const toggleCard = (index) => {
-    setOpenCards((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
+  const scrollToCard = (index) => {
+    const container = scrollRef.current;
+    const card = cardRefs.current[index];
+    if (container && card) {
+      const scrollLeft =
+        card.offsetLeft - container.offsetWidth / 2 + card.offsetWidth / 2;
+      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
+    }
   };
+  
 
   return (
-    <section className="py-12 min-h-screen h-full  bg-gray-100 dark:bg-gray-800">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">
-          {t("header.projects")}
-        </h2>
+    <section className="w-full bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 py-24">
+      {/* Scroll alanı */}
+      <div
+        ref={scrollRef}
+        className="scroll-hide flex w-full overflow-x-auto gap-6 sm:gap-10 px-4 py-10 sm:px-10 snap-x snap-mandatory scroll-smooth items-center"
+        style={{ WebkitOverflowScrolling: "touch" }}
+        onWheel={(e) => {
+          if (e.deltaY !== 0) {
+            smoothScroll(scrollRef.current, e.deltaY, 300);
+          }
+        }}
+      >
+        {projectData.map((project, index) => (
+          <ScrollCard
+            key={index}
+            project={project}
+            innerRef={(el) => (cardRefs.current[index] = el)}
+          />
+        ))}
+      </div>
 
-        <div className="space-y-6">
-          {projectData.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden"
-            >
-              {/* Kart Başlığı */}
-              <div
-                className="flex justify-between items-center cursor-pointer p-4"
-                onClick={() => toggleCard(index)}
-              >
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  {project.name}
-                </h3>
-                <div className="text-gray-600 dark:text-gray-300 transition-transform duration-300">
-                  {openCards[index] ? (
-                    <FaChevronDown size={20} />
-                  ) : (
-                    <FaChevronRight size={20} />
-                  )}
-                </div>
-              </div>
-
-              {/* Kart İçeriği (Animasyonlu Açılma) */}
-              <div
-                className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${openCards[index] ? "max-h-[800px]" : "max-h-0"
-                  }`}
-              >
-                <div className="p-4">
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    {project.description}
-                  </p>
-                  <Swiper
-                    modules={[Navigation, Pagination]}
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    pagination={{ clickable: false }}
-                    navigation
-                    className="w-full max-w-4xl mx-auto"
-                  >
-                    {project.images?.map((image, i) => (
-                      <SwiperSlide key={i}>
-                        <div className="flex justify-center items-center rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-700">
-                          <img
-                            src={image.src}
-                            alt={image.alt}
-                            className="max-w-full max-h-96"
-                          />
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                  {project.url && (
-                    <div className="flex justify-between">
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 dark:bg-blue-400 dark:hover:bg-blue-500 transition-all"
-                      >
-                        {t("try")}
-                      </a>
-
-                      <a
-                        href={project.git}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 dark:bg-blue-400 dark:hover:bg-blue-500 transition-all"
-                      >
-                        {t("details")}
-                      </a>
-                    </div>
-
-                  )}
-
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Tıklanabilir dot'lar */}
+      <div className="flex justify-center gap-3 py-3 bg-transparent">
+        {projectData.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollToCard(index)}
+            className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-gray-400 dark:bg-gray-600 hover:bg-indigo-500 transition"
+            aria-label={`Go to project ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
+  );
+}
+
+function ScrollCard({ project, innerRef }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5, once: false });
+  const { t } = useTranslation();
+
+  return (
+    <motion.div
+      ref={(el) => {
+        ref.current = el;
+        innerRef?.(el);
+      }}
+      className="snap-center w-[90vw] sm:w-[85vw] lg:w-[70vw] max-w-[1000px] h-auto sm:h-[80vh] relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl flex-shrink-0 flex items-center justify-center bg-white dark:bg-zinc-900 border transition-all duration-500 border-none outline-none"
+      initial={{ scale: 0.95, opacity: 0.6 }}
+      animate={{
+        scale: isInView ? 1 : 0.95,
+        opacity: isInView ? 1 : 0.6,
+      }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      {/* Arka plan */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-50 blur-sm"
+        style={{
+          backgroundImage: `url(${project.images?.[0]?.src || '/default.jpg'})`,
+        }}
+      />
+      <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm" />
+
+      {/* İçerik */}
+      <div className="relative z-10 text-center px-4 sm:px-6 py-6 sm:py-10 max-w-[90%] sm:max-w-2xl">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-5">{project.name}</h2>
+        <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-5 sm:mb-8">
+          {project.description}
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          {project.url && (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 sm:px-6 rounded-full text-sm font-semibold transition"
+            >
+              {t("try")}
+            </a>
+          )}
+          {project.git && (
+            <a
+              href={project.git}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-4 py-2 sm:px-6 rounded-full text-sm font-semibold transition"
+            >
+              {t("details")}
+            </a>
+          )}
+        </div>
+      </div>
+    </motion.div>
   );
 }
 

@@ -8,6 +8,7 @@ import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import { useTranslation } from "react-i18next";
 import "./i18n";
+import CursorBlob from "./components/CursorBlob";
 
 function App() {
   const { i18n } = useTranslation();
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <Router>
-      <div className={`font-sans bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen`}>
+      <CursorBlob />
+      <div className={`font-sans bg-white dark:bg-black text-gray-900 dark:text-gray-100 min-h-screen`}>
         {/* Header */}
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
@@ -37,11 +39,11 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
-
-        {/* Footer */}
-        <Footer />
       </div>
+      {/* Footer */}
+      <Footer />
     </Router>
+
   );
 }
 
