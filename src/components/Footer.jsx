@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-black dark:bg-black text-white py-10 px-6 mt-7">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 mt-5">
+    <footer className="bg-black dark:bg-black text-white py-10 px-6 pt-7">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-5">
         {/* Sol taraf */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-bold">halilyusa.dev</h3>
