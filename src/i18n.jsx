@@ -77,7 +77,7 @@ const resources = {
                         { "src": "public/assets/weather/rain.png", "alt": "Rainy" },
                         { "src": "public/assets/weather/snow.png", "alt": "Snowy" }
                     ],
-                    "url": "https://weatherapp-blond-two.vercel.app/",
+                    "url": "https://haloweather.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
                 },
                 {
