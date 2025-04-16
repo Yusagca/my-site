@@ -69,7 +69,7 @@ const resources = {
             "projects": [
                 {
                     "name": "Weather App",
-                    "description": "HaloWeather is a modern, interactive weather application that lets users explore real-time weather data by searching cities and regions directly on a global map. With animated red markers, smooth zoom transitions, a state-only marker system, and locale-aware smart search, it offers both performance and an elegant user experience."
+                    "description": "HaloWeather is a modern, interactive weather application that lets users explore real-time weather data by searching cities and regions directly on a global map. With animated red markers, smooth zoom transitions, a state-only marker system, and locale-aware smart search, it offers both performance and an elegant user experience.",
                     "images": [
                         { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
                         { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
@@ -176,8 +176,7 @@ const resources = {
             "projects": [
                 {
                     "name": "Weather App",
-                    "description": "HaloWeather, kullanıcıların dünya haritası üzerinden şehir ve bölgeleri arayarak anlık hava durumu verilerine ulaşmasını sağlayan modern, etkileşimli ve çok dilli bir hava durumu uygulamasıdır.
-Kırmızı animasyonlu seçim göstergesi, yumuşak harita geçişleri, state-only marker yapısı ve dil duyarlı akıllı arama sistemiyle hem işlevsel hem de görsel bir şölen sunar.",
+                    "description": "HaloWeather, kullanıcıların dünya haritası üzerinden şehir ve bölgeleri arayarak anlık hava durumu verilerine ulaşmasını sağlayan modern, etkileşimli ve çok dilli bir hava durumu uygulamasıdır.Kırmızı animasyonlu seçim göstergesi, yumuşak harita geçişleri, state-only marker yapısı ve dil duyarlı akıllı arama sistemiyle hem işlevsel hem de görsel bir şölen sunar.",
                     "images": [
                         { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
                         { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
