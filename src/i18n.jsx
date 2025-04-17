@@ -95,7 +95,7 @@ const resources = {
                     "git":"https://github.com/Yusagca/quiz-app/blob/main/README.md"
                 },
                 {
-                    "name": "TahmninPro App",
+                    "name": "TahminPro App",
                     "description": "TahminPro App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. Designed with clarity, speed, and flexibility in mind, it is ideal for analysts and users dealing with financial data.",
                     "images": [
                         { "src": "/assets/tahmin/tahmin1.png", "alt": "Giriş Ekranı" },
