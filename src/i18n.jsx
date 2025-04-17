@@ -95,6 +95,14 @@ const resources = {
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
                     "git":"https://github.com/Yusagca/quiz-app/blob/main/README.md"
                 },
+                {
+                  "name": "Forecast App",
+                  "description": "Forecast App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. Designed with clarity, speed, and flexibility in mind, it is ideal for analysts and users dealing with financial data.",
+                  "images": [],
+                  "url": "https://tahminpro.vercel.app/",
+                  "git": "https://github.com/Yusagca/tahminapp"
+                },
+
             ],
             try: "Click for try this app.",
             details:"Click for detailed and technical information."
@@ -202,6 +210,14 @@ const resources = {
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
                     "git":"https://github.com/Yusagca/quiz-app/blob/main/README.md"
                 },
+                {
+                    "name": "Forecast App",
+                    "description": "Forecast App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Özellikle finansal veri analizi yapan kullanıcılar için görsellik, hız ve esneklik ön planda tutulmuştur.",
+                    "images": [],
+                    "url": "https://tahminpro.vercel.app/",
+                    "git": "https://github.com/Yusagca/tahminapp"
+                },
+
             ],
             try: "Denemek için tıklayın.",
             details:"Detaylar ve teknik bilgiler için tıklayın."
