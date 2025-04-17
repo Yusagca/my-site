@@ -78,7 +78,7 @@ const resources = {
                         { "src": "/assets/weather/weather3.png", "alt": "Sunny" },
                         { "src": "/assets/weather/weather4.png", "alt": "Rainy" },
                     ],
-                    "url": "https://weatherapp-blond-two.vercel.app/",
+                    "url": "https://haloweather.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
                 },
                 {
@@ -197,7 +197,7 @@ const resources = {
                         { "src": "/assets/weather/weather3.png", "alt": "Sunny" },
                         { "src": "/assets/weather/weather4.png", "alt": "Rainy" },
                     ],
-                    "url": "https://weatherapp-blond-two.vercel.app/",
+                    "url": "https://haloweather.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
                 },
                 {
