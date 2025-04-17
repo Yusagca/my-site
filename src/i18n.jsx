@@ -71,11 +71,11 @@ const resources = {
                     "name": "Weather App",
                     "description": "HaloWeather is a modern, interactive weather application that lets users explore real-time weather data by searching cities and regions directly on a global map. With animated red markers, smooth zoom transitions, a state-only marker system, and locale-aware smart search, it offers both performance and an elegant user experience.",
                     "images": [
-                        { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
-                        { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
-                        { "src": "public/assets/weather/sunny.png", "alt": "Sunny" },
-                        { "src": "public/assets/weather/rain.png", "alt": "Rainy" },
-                        { "src": "public/assets/weather/snow.png", "alt": "Snowy" }
+                        { "src": "/assets/weather/cloudy.png", "alt": "Cloudy" },
+                        { "src": "/assets/weather/fog.png", "alt": "Foggy" },
+                        { "src": "/assets/weather/sunny.png", "alt": "Sunny" },
+                        { "src": "/assets/weather/rain.png", "alt": "Rainy" },
+                        { "src": "/assets/weather/snow.png", "alt": "Snowy" }
                     ],
                     "url": "https://haloweather.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
@@ -84,12 +84,12 @@ const resources = {
                     "name": "Quiz App",
                     "description": "The Quiz App is a React-based interactive quiz platform that fetches questions from the Open Trivia Database (OpenTDB). Users can customize the quiz by selecting the number of questions, categories, and difficulty levels. The app includes features like a countdown timer, real-time feedback for answers, and score tracking.",
                     "images": [
-                        { "src": "public/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
-                        { "src": "public/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
-                        { "src": "public/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
-                        { "src": "public/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
-                        { "src": "public/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
-                        { "src": "public/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
+                        { "src": "/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
+                        { "src": "/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
+                        { "src": "/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
+                        { "src": "/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
+                        { "src": "/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
+                        { "src": "/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
 
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
@@ -186,11 +186,11 @@ const resources = {
                     "name": "Weather App",
                     "description": "HaloWeather, kullanıcıların dünya haritası üzerinden şehir ve bölgeleri arayarak anlık hava durumu verilerine ulaşmasını sağlayan modern, etkileşimli ve çok dilli bir hava durumu uygulamasıdır.Kırmızı animasyonlu seçim göstergesi, yumuşak harita geçişleri, state-only marker yapısı ve dil duyarlı akıllı arama sistemiyle hem işlevsel hem de görsel bir şölen sunar.",
                     "images": [
-                        { "src": "public/assets/weather/cloudy.png", "alt": "Cloudy" },
-                        { "src": "public/assets/weather/fog.png", "alt": "Foggy" },
-                        { "src": "public/assets/weather/sunny.png", "alt": "Sunny" },
-                        { "src": "public/assets/weather/rain.png", "alt": "Rainy" },
-                        { "src": "public/assets/weather/snow.png", "alt": "Snowy" }
+                        { "src": "/assets/weather/cloudy.png", "alt": "Cloudy" },
+                        { "src": "/assets/weather/fog.png", "alt": "Foggy" },
+                        { "src": "/assets/weather/sunny.png", "alt": "Sunny" },
+                        { "src": "/assets/weather/rain.png", "alt": "Rainy" },
+                        { "src": "/assets/weather/snow.png", "alt": "Snowy" }
                     ],
                     "url": "https://haloweather.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
@@ -199,12 +199,12 @@ const resources = {
                     "name": "Quiz App",
                     "description": "Quiz Uygulaması, Open Trivia Database (OpenTDB) üzerinden sorular getiren, React tabanlı bir interaktif quiz platformudur. Kullanıcılar, soru sayısını, kategoriyi ve zorluk seviyesini seçerek kendi quizlerini oluşturabilir. Uygulama; geri sayım sayacı, cevaplar için anlık geri bildirim ve puan takibi gibi özellikler sunar.",
                     "images": [
-                        { "src": "public/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
-                        { "src": "public/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
-                        { "src": "public/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
-                        { "src": "public/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
-                        { "src": "public/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
-                        { "src": "public/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
+                        { "src": "/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
+                        { "src": "/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
+                        { "src": "/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
+                        { "src": "/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
+                        { "src": "/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
+                        { "src": "/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
 
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
