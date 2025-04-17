@@ -39,6 +39,8 @@ const resources = {
             footer:"This site created and developed by Halil Yuşa Ağca.",
             interestsTitle:"İnterests",
             languagesTitle:"Languages",
+            projectsHeader:"Welcome to my personal showcase!",
+            projectsIntro: "Here, you'll find a curated selection of projects that reflect both my technical skills and design vision. For more details, feel free to click the links inside each card or explore my complete portfolio.",
             workExperience: [
                 {
                     position: "React Intern",
@@ -69,14 +71,14 @@ const resources = {
             "projects": [
                 {
                     "name": "Weather App",
-                    "description": "HaloWeather is a modern, interactive weather application that lets users explore real-time weather data by searching cities and regions directly on a global map. With animated red markers, smooth zoom transitions, a state-only marker system, and locale-aware smart search, it offers both performance and an elegant user experience.",
+                    "description": "The Weather App is a React-based application that provides real-time weather updates using the Open-Meteo API. The app allows users to search for a city's weather conditions, including temperature, precipitation, and wind speed, while displaying a dynamic video background based on weather conditions.",
                     "images": [
-                        { "src": "/assets/weather/weather1.png", "alt": "Weather1" },
-                        { "src": "/assets/weather/weather2.png", "alt": "Weather2" },
-                        { "src": "/assets/weather/weather3.png", "alt": "Weather3" },
-                        { "src": "/assets/weather/weather4.png", "alt": "Weather4" },
+                        { "src": "/assets/weather/weather1.png", "alt": "Cloudy" },
+                        { "src": "/assets/weather/weather2.png", "alt": "Foggy" },
+                        { "src": "/assets/weather/weather3.png", "alt": "Sunny" },
+                        { "src": "/assets/weather/weather4.png", "alt": "Rainy" },
                     ],
-                    "url": "https://haloweather.vercel.app/",
+                    "url": "https://weatherapp-blond-two.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
                 },
                 {
@@ -87,22 +89,28 @@ const resources = {
                         { "src": "/assets/quiz/quiz2.png", "alt": "Ayar Ekranı" },
                         { "src": "/assets/quiz/quiz3.png", "alt": "Soru Ekranı" },
                         { "src": "/assets/quiz/quiz4.png", "alt": "Doğru Cevap" },
+
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
                     "git":"https://github.com/Yusagca/quiz-app/blob/main/README.md"
                 },
                 {
-                  "name": "Forecast App",
-                  "description": "Forecast App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. Designed with clarity, speed, and flexibility in mind, it is ideal for analysts and users dealing with financial data.",
-                  "images": [],
-                  "url": "https://tahminpro.vercel.app/",
-                  "git": "https://github.com/Yusagca/tahminapp"
-                },
-
+                    "name": "TahmninPro App",
+                    "description": "TahminPro App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. Designed with clarity, speed, and flexibility in mind, it is ideal for analysts and users dealing with financial data.",
+                    "images": [
+                        { "src": "/assets/tahmin/tahmin1.png", "alt": "Giriş Ekranı" },
+                        { "src": "/assets/tahmin/tahmin2.png", "alt": "Ayar Ekranı" },
+                        { "src": "/assets/tahmin/tahmin3.png", "alt": "Soru Ekranı" },
+                        { "src": "/assets/tahmin/tahmin4.png", "alt": "Doğru Cevap" },
+                    ],
+                    "url": "https://tahminpro.vercel.app/",
+                    "git": "https://github.com/Yusagca"
+                  },
             ],
             try: "Click for try this app.",
             details:"Click for detailed and technical information."
 
+            
         }
     },
 
@@ -150,6 +158,8 @@ const resources = {
             footer:"Bu site Halil Yuşa Ağca tarafından hazırlanıp geliştirilmiştir.",
             interestsTitle:"İlgi Alanları",
             languagesTitle:"Diller",
+            projectsHeader:"Sergime Hoşgeldiniz!",
+            projectsIntro: "Burada, hem teknik yetkinliğimi hem de tasarım vizyonumu yansıtan seçilmiş projelerimi bulabilirsiniz. Daha fazla detay için her bir kartın içindeki bağlantılara tıklayabilir ya da portföyümün tamamını keşfedebilirsiniz.",
             workExperience: [
                 {
                     position: "React Stajyer",
@@ -177,41 +187,43 @@ const resources = {
                 }
             ],
             skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind", "Python", "Swift"],
-            "projects": [
+            projects: [
                 {
                     "name": "Weather App",
-                    "description": "HaloWeather, kullanıcıların dünya haritası üzerinden şehir ve bölgeleri arayarak anlık hava durumu verilerine ulaşmasını sağlayan modern, etkileşimli ve çok dilli bir hava durumu uygulamasıdır.Kırmızı animasyonlu seçim göstergesi, yumuşak harita geçişleri, state-only marker yapısı ve dil duyarlı akıllı arama sistemiyle hem işlevsel hem de görsel bir şölen sunar.",
+                    "description": "Hava Durumu Uygulaması, Open-Meteo API kullanarak gerçek zamanlı hava durumu güncellemeleri sağlayan React tabanlı bir uygulamadır. Kullanıcılar, bir şehrin hava durumu koşullarını (sıcaklık, yağış, rüzgar hızı gibi) arayabilir ve hava durumuna göre değişen dinamik bir video arka planıyla görüntüleyebilir.",
                     "images": [
-                        { "src": "/assets/weather/cloudy.png", "alt": "Cloudy" },
-                        { "src": "/assets/weather/fog.png", "alt": "Foggy" },
-                        { "src": "/assets/weather/sunny.png", "alt": "Sunny" },
-                        { "src": "/assets/weather/rain.png", "alt": "Rainy" },
-                        { "src": "/assets/weather/snow.png", "alt": "Snowy" }
+                        { "src": "/assets/weather/weather1.png", "alt": "Cloudy" },
+                        { "src": "/assets/weather/weather2.png", "alt": "Foggy" },
+                        { "src": "/assets/weather/weather3.png", "alt": "Sunny" },
+                        { "src": "/assets/weather/weather4.png", "alt": "Rainy" },
                     ],
-                    "url": "https://haloweather.vercel.app/",
+                    "url": "https://weatherapp-blond-two.vercel.app/",
                     "git":"https://github.com/Yusagca/weatherapp/blob/main/README.md"
                 },
                 {
                     "name": "Quiz App",
                     "description": "Quiz Uygulaması, Open Trivia Database (OpenTDB) üzerinden sorular getiren, React tabanlı bir interaktif quiz platformudur. Kullanıcılar, soru sayısını, kategoriyi ve zorluk seviyesini seçerek kendi quizlerini oluşturabilir. Uygulama; geri sayım sayacı, cevaplar için anlık geri bildirim ve puan takibi gibi özellikler sunar.",
                     "images": [
-                        { "src": "/assets/quiz/quizgiris.png", "alt": "Giriş Ekranı" },
-                        { "src": "/assets/quiz/quizayar.png", "alt": "Ayar Ekranı" },
-                        { "src": "/assets/quiz/quizsoru.png", "alt": "Soru Ekranı" },
-                        { "src": "/assets/quiz/quizdogru.png", "alt": "Doğru Cevap" },
-                        { "src": "/assets/quiz/quizyanlis.png", "alt": "Yanlış Cevap" },
-                        { "src": "/assets/quiz/quizbitis.png", "alt": "Bitiş Ekranı" }
+                        { "src": "/assets/quiz/quiz1.png", "alt": "Giriş Ekranı" },
+                        { "src": "/assets/quiz/quiz2.png", "alt": "Ayar Ekranı" },
+                        { "src": "/assets/quiz/quiz3.png", "alt": "Soru Ekranı" },
+                        { "src": "/assets/quiz/quiz4.png", "alt": "Doğru Cevap" },
 
                     ],
                     "url": "https://quiz-app-blush-seven-64.vercel.app/",
                     "git":"https://github.com/Yusagca/quiz-app/blob/main/README.md"
                 },
                 {
-                    "name": "Forecast App",
-                    "description": "Forecast App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Özellikle finansal veri analizi yapan kullanıcılar için görsellik, hız ve esneklik ön planda tutulmuştur.",
-                    "images": [],
+                    "name": "TahminPro App",
+                    "description": "TahminPro App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Özellikle finansal veri analizi yapan kullanıcılar için görsellik, hız ve esneklik ön planda tutulmuştur.",
+                    "images": [
+                        { "src": "/assets/tahmin/tahmin1.png", "alt": "Giriş Ekranı" },
+                        { "src": "/assets/tahmin/tahmin2.png", "alt": "Ayar Ekranı" },
+                        { "src": "/assets/tahmin/tahmin3.png", "alt": "Soru Ekranı" },
+                        { "src": "/assets/tahmin/tahmin4.png", "alt": "Doğru Cevap" },
+                    ],
                     "url": "https://tahminpro.vercel.app/",
-                    "git": "https://github.com/Yusagca/tahminapp"
+                    "git": "https://github.com/Yusagca"
                 },
 
             ],

@@ -18,20 +18,28 @@ function Projects() {
       container.scrollTo({ left: scrollLeft, behavior: "smooth" });
     }
   };
-  
+
+
+
 
   return (
+
     <section className="w-full bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 py-24">
       {/* Scroll alanı */}
+      {/* Açıklama */}
+      <div className="text-center px-6 sm:px-10 max-w-3xl mx-auto mb-4 sm:mb-8">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+          {t("projectsHeader") || "Projelerime Göz Atın"}
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+         {t("projectsIntro")}
+        </p>
+      </div>
+
       <div
         ref={scrollRef}
         className="scroll-hide flex w-full overflow-x-auto gap-6 sm:gap-10 px-4 py-10 sm:px-10 snap-x snap-mandatory scroll-smooth items-center"
         style={{ WebkitOverflowScrolling: "touch" }}
-        onWheel={(e) => {
-          if (e.deltaY !== 0) {
-            smoothScroll(scrollRef.current, e.deltaY, 300);
-          }
-        }}
       >
         {projectData.map((project, index) => (
           <ScrollCard
@@ -62,6 +70,20 @@ function ScrollCard({ project, innerRef }) {
   const isInView = useInView(ref, { amount: 0.5, once: false });
   const { t } = useTranslation();
 
+  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!project?.images || project.images.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+    }, 5000); // 5 saniyede bir geçiş
+
+    return () => clearInterval(interval);
+  }, [project]);
+
+  const backgroundImage = project.images?.[currentImageIndex]?.src || '/default.jpg';
+
   return (
     <motion.div
       ref={(el) => {
@@ -76,14 +98,14 @@ function ScrollCard({ project, innerRef }) {
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      {/* Arka plan */}
+      {/* 🔄 Dinamik Arka Plan */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-50 blur-sm"
+        className="absolute inset-0 bg-cover bg-center opacity-100 transition-all duration-1000"
         style={{
-          backgroundImage: `url(${project.images?.[0]?.src || '/default.jpg'})`,
+          backgroundImage: `url(${backgroundImage})`,
         }}
       />
-      <div className="absolute inset-0 bg-white/60 dark:bg-black/70 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-white/60 dark:bg-black/70" />
 
       {/* İçerik */}
       <div className="relative z-10 text-center px-4 sm:px-6 py-6 sm:py-10 max-w-[90%] sm:max-w-2xl">
@@ -117,5 +139,6 @@ function ScrollCard({ project, innerRef }) {
     </motion.div>
   );
 }
+
 
 export default Projects;
