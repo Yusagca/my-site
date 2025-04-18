@@ -70,8 +70,8 @@ const resources = {
             skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind", "Python", "Swift"],
             "projects": [
                 {
-                    "name": "Weather App",
-                    "description": "The Weather App is a React-based application that provides real-time weather updates using the Open-Meteo API. The app allows users to search for a city's weather conditions, including temperature, precipitation, and wind speed, while displaying a dynamic video background based on weather conditions. ",
+                    "name": "HaloWeather",
+                    "description": "HaloWeather is a modern, interactive weather application that lets users explore real-time weather data by searching cities and regions directly on a global map. With animated red markers, smooth zoom transitions, a state-only marker system, and locale-aware smart search, it offers both performance and an elegant user experience.",
                     "images": [
                         { "src": "/assets/weather/weather1.png", "alt": "Cloudy" },
                         { "src": "/assets/weather/weather2.png", "alt": "Foggy" },
@@ -189,8 +189,8 @@ const resources = {
             skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind", "Python", "Swift"],
             projects: [
                 {
-                    "name": "Weather App",
-                    "description": "Hava Durumu Uygulaması, Open-Meteo API kullanarak gerçek zamanlı hava durumu güncellemeleri sağlayan React tabanlı bir uygulamadır. Kullanıcılar, bir şehrin hava durumu koşullarını (sıcaklık, yağış, rüzgar hızı gibi) arayabilir ve hava durumuna göre değişen dinamik bir video arka planıyla görüntüleyebilir.",
+                    "name": "HaloWeather",
+                    "description": "HaloWeather, kullanıcıların dünya haritası üzerinden şehir ve bölgeleri arayarak anlık hava durumu verilerine ulaşmasını sağlayan modern, etkileşimli ve çok dilli bir hava durumu uygulamasıdır.Kırmızı animasyonlu seçim göstergesi, yumuşak harita geçişleri, state-only marker yapısı ve dil duyarlı akıllı arama sistemiyle hem işlevsel hem de görsel bir şölen sunar.",
                     "images": [
                         { "src": "/assets/weather/weather1.png", "alt": "Cloudy" },
                         { "src": "/assets/weather/weather2.png", "alt": "Foggy" },
