@@ -71,7 +71,7 @@ const resources = {
             "projects": [
                 {
                     "name": "Weather App",
-                    "description": "The Weather App is a React-based application that provides real-time weather updates using the Open-Meteo API. The app allows users to search for a city's weather conditions, including temperature, precipitation, and wind speed, while displaying a dynamic video background based on weather conditions.",
+                    "description": "The Weather App is a React-based application that provides real-time weather updates using the Open-Meteo API. The app allows users to search for a city's weather conditions, including temperature, precipitation, and wind speed, while displaying a dynamic video background based on weather conditions. ",
                     "images": [
                         { "src": "/assets/weather/weather1.png", "alt": "Cloudy" },
                         { "src": "/assets/weather/weather2.png", "alt": "Foggy" },
@@ -96,7 +96,7 @@ const resources = {
                 },
                 {
                     "name": "TahminPro App",
-                    "description": "TahminPro App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. Designed with clarity, speed, and flexibility in mind, it is ideal for analysts and users dealing with financial data.",
+                    "description": "TahminPro App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. This project has been supported by The Scientific and Technological Research Council of Türkiye (TÜBİTAK) under the 2209-A Program for Supporting Research Projects of Undergraduate Students. TahminPro was developed as an academically grounded project focused on financial data forecasting.",
                     "images": [
                         { "src": "/assets/tahmin/tahmin1.png", "alt": "Giriş Ekranı" },
                         { "src": "/assets/tahmin/tahmin2.png", "alt": "Ayar Ekranı" },
@@ -215,7 +215,7 @@ const resources = {
                 },
                 {
                     "name": "TahminPro App",
-                    "description": "TahminPro App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Özellikle finansal veri analizi yapan kullanıcılar için görsellik, hız ve esneklik ön planda tutulmuştur.",
+                    "description": "TahminPro App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Bu proje, Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) tarafından 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı kapsamında desteklenmiştir. TahminPro, akademik geçerliliği olan ve finansal veri tahminlerine odaklanan bir öğrenci projesi olarak geliştirilmiştir.",
                     "images": [
                         { "src": "/assets/tahmin/tahmin1.png", "alt": "Giriş Ekranı" },
                         { "src": "/assets/tahmin/tahmin2.png", "alt": "Ayar Ekranı" },
