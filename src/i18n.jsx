@@ -32,7 +32,7 @@ const resources = {
                 descriptionInsta:"Follow me on Instagram for personal updates.",
                 descriptionGit:"Explore my projects and repositories on GitHub."
             },
-            summary: "Hello my name is Halil. As a final year Computer Engineering student, I am a passionate individual in the field of technology and software development. In my third year, I worked part-time as a hybrid front-end developer at a company that develops cloud security systems. During this process, I gained experience in developing modern and user-friendly web applications using HTML, CSS, JavaScript, TailwindCSS, TypeScript and React. I continue to add value to software projects with my dynamic problem-solving skills and tendency to teamwork.You can learn everything projects me on this site I developed. You can test the sample projects I have made.",
+            summary: "Hello my name is Halil. I am a passionate individual in the field of technology and software development. In my third year, I worked part-time as a hybrid front-end developer at a company that develops cloud security systems. During this process, I gained experience in developing modern and user-friendly web applications using HTML, CSS, JavaScript, TailwindCSS, TypeScript and React. I continue to add value to software projects with my dynamic problem-solving skills and tendency to teamwork.You can learn everything projects me on this site I developed. You can test the sample projects I have made.",
             interests: ["Fitness", "Technology", "Motor Sports","Football","Cars","Watches","Shoes"],
             languages: ["English [B1]", "German [A2]"],
             visit:"Visit",
@@ -151,7 +151,7 @@ const resources = {
                 descriptionInsta:"Beni İnstagramdan takip edin.",
                 descriptionGit:"Projelerime ve Repolarıma göz atın."
             },
-            summary: "Merhaba ben Halil. Son sınıf Bilgisayar Mühendisliği öğrencisi olarak teknoloji ve yazılım geliştirme alanında tutkulu bir bireyim. Üçüncü sınıfta, bulut güvenlik sistemleri geliştiren bir firmada yarı zamanlı hybrid bir front-end developer olarak çalıştım. Bu süreçte HTML, CSS, JavaScript, TailwindCSS, TypeScript ve React kullanarak modern ve kullanıcı dostu web uygulamaları geliştirme deneyimi kazandım. Dinamik problem çözme becerilerim ve ekip çalışmasına yatkınlığım ile yazılım projelerine değer katmaya devam ediyorum.Kendi geliştirdiğim bu sitede benimle ilgili her şeyi öğrenebilirsiniz. Yaptığım örnek projeleri test edebilirsiniz.",
+            summary: "Merhaba ben Halil. Teknoloji ve yazılım geliştirme alanında tutkulu bir bireyim. Üçüncü sınıfta, bulut güvenlik sistemleri geliştiren bir firmada yarı zamanlı hybrid bir front-end developer olarak çalıştım. Bu süreçte HTML, CSS, JavaScript, TailwindCSS, TypeScript ve React kullanarak modern ve kullanıcı dostu web uygulamaları geliştirme deneyimi kazandım. Dinamik problem çözme becerilerim ve ekip çalışmasına yatkınlığım ile yazılım projelerine değer katmaya devam ediyorum.Kendi geliştirdiğim bu sitede benimle ilgili her şeyi öğrenebilirsiniz. Yaptığım örnek projeleri test edebilirsiniz.",
             interests: ["Fitness", "Teknoloji", "Motor Sporları","Futbol","Arabalar","Saatler","Ayakkabılar"],
             languages: ["İngilizce [B1]", "Almanca [A2]"],
             visit:"Git",
