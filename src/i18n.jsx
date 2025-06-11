@@ -43,13 +43,22 @@ const resources = {
             projectsIntro: "Here, you'll find a curated selection of projects that reflect both my technical skills and design vision. For more details, feel free to click the links inside each card or explore my complete portfolio.",
             workExperience: [
                 {
-                    position: "React Intern",
+                    position: "FrontEnd Developer",
                     company: "LPSChain",
                     location: "Istanbul",
                     description: "Developed web applications using HTML, CSS, JavaScript, Tailwind, and React.",
                     startDate: "June 2023",
                     endDate: "July 2024"
-                }
+                },
+                {
+                    position: "Internship",
+                    company: "Maptriks",
+                    location: "Istanbul",
+                    description: "Developed web applications using HTML, CSS, JavaScript, Tailwind, and React. And developed basic machine learning projects",
+                    startDate: "February 2025",
+                    endDate: "June 2025"
+                },
+                
             ],
             education: [
                 {
@@ -162,13 +171,21 @@ const resources = {
             projectsIntro: "Burada, hem teknik yetkinliğimi hem de tasarım vizyonumu yansıtan seçilmiş projelerimi bulabilirsiniz. Daha fazla detay için her bir kartın içindeki bağlantılara tıklayabilir ya da portföyümün tamamını keşfedebilirsiniz.",
             workExperience: [
                 {
-                    position: "React Stajyer",
+                    position: "FrontEnd Developer",
                     company: "LPSChain",
                     location: "İstanbul",
                     description: "HTML, CSS, JavaScript, Tailwind ve React kullanarak web uygulamaları geliştirdim.",
                     startDate: "Haziran 2023",
                     endDate: "Temmuz 2024"
-                }
+                },
+                                {
+                    position: "Zorunlu Staj",
+                    company: "Maptriks",
+                    location: "Istanbul",
+                    description: "HTML, CSS, JavaScript, Tailwind ve React kullanarak web uygulamaları geliştirdim. Basit makine öğrenmesi projeleri geliştirdim.",
+                    startDate: "Şubat 2025",
+                    endDate: "Haziran 2025"
+                },
             ],
             education: [
                 {
