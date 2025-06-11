@@ -113,7 +113,7 @@ const resources = {
                         { "src": "/assets/tahmin/tahmin4.png", "alt": "Doğru Cevap" },
                     ],
                     "url": "https://tahminpro.vercel.app/",
-                    "git": "https://github.com/Yusagca"
+                    "git": "https://github.com/Yusagca/currency-forecast-ai/blob/1931c127a0ec63eb56bb5d472496db1a493b65f0/README.md"
                   },
             ],
             try: "Click for try this app.",
@@ -240,7 +240,7 @@ const resources = {
                         { "src": "/assets/tahmin/tahmin4.png", "alt": "Doğru Cevap" },
                     ],
                     "url": "https://tahminpro.vercel.app/",
-                    "git": "https://github.com/Yusagca"
+                    "git": "https://github.com/Yusagca/currency-forecast-ai/blob/1931c127a0ec63eb56bb5d472496db1a493b65f0/README.md"
                 },
 
             ],
