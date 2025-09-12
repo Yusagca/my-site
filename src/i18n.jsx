@@ -88,7 +88,7 @@ const resources = {
                         { "src": "/assets/dershanet/dershanet3.png", "alt": "Filter Module" },
                         { "src": "/assets/dershanet/dershanet4.png", "alt": "Registration Page" }
                     ],
-                    "url": "https://dershanet.vercel.app/",
+                    "url": "https://dershanet.com/",
                     "git": "https://github.com/Yusagca/dershanet/blob/main/README.md"
                 },
 
@@ -230,7 +230,7 @@ const resources = {
                         { "src": "/assets/dershanet/dershanet3.png", "alt": "Filtreleme Modülü" },
                         { "src": "/assets/dershanet/dershanet4.png", "alt": "Kayıt Ekranı" }
                     ],
-                    "url": "https://dershanet.vercel.app/",
+                    "url": "https://dershanet.com",
                     "git": "https://github.com/Yusagca/dershanet/blob/main/README.md"
                 },
                 {
