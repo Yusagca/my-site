@@ -93,6 +93,20 @@ const resources = {
                 },
 
                 {
+  "name": "Derso",
+  "description": "Derso is a modern promotional website built to represent a student-focused social learning platform. I independently developed the entire frontend from scratch using Next.js, TypeScript, and TailwindCSS, with a strong focus on performance, accessibility, and responsive design. The website serves as the main public-facing platform, introducing the product vision, core features, and value proposition while seamlessly integrating with backend APIs for dynamic content where needed.",
+  "images": [
+    { "src": "/assets/derso/derso1.png", "alt": "Landing Page" },
+    { "src": "/assets/derso/derso2.png", "alt": "Features Section" },
+    { "src": "/assets/derso/derso3.png", "alt": "About Platform" },
+    { "src": "/assets/derso/derso4.png", "alt": "Responsive Design View" }
+  ],
+  "url": "https://dersocial.com/",
+  "git": "https://dersocial.com/"
+},
+
+
+                {
                     "name": "TahminPro App",
                     "description": "TahminPro App is a modern financial prediction platform that allows users to visually explore currency and inflation forecasts through interactive line charts. Powered by a SARIMA-based model, the application delivers a professional user experience with real-time data visualization, light/dark theme support, full-screen graph mode, and a fully responsive interface. This project has been supported by The Scientific and Technological Research Council of Türkiye (TÜBİTAK) under the 2209-A Program for Supporting Research Projects of Undergraduate Students. TahminPro was developed as an academically grounded project focused on financial data forecasting.",
                     "images": [
@@ -233,6 +247,20 @@ const resources = {
                     "url": "https://dershanet.com",
                     "git": "https://github.com/Yusagca/dershanet/blob/main/README.md"
                 },
+
+                {
+  "name": "Derso",
+  "description": "Derso, öğrenci odaklı bir sosyal öğrenme platformunu tanıtmak amacıyla geliştirilen modern bir tanıtım web sitesidir. Tüm frontend yapısı Next.js, TypeScript ve TailwindCSS kullanılarak sıfırdan tarafımca geliştirilmiştir. Performans, erişilebilirlik ve responsive tasarım öncelikli olacak şekilde kurgulanan site, platformun vizyonunu, temel özelliklerini ve sunduğu değeri etkili bir şekilde yansıtırken, gerekli durumlarda backend API’leriyle dinamik olarak etkileşime girmektedir.",
+  "images": [
+    { "src": "/assets/derso/derso1.png", "alt": "Ana Sayfa" },
+    { "src": "/assets/derso/derso2.png", "alt": "Özellikler Bölümü" },
+    { "src": "/assets/derso/derso3.png", "alt": "Platform Hakkında" },
+    { "src": "/assets/derso/derso4.png", "alt": "Responsive Tasarım Görünümü" }
+  ],
+  "url": "https://dersocia.com/",
+  "git": "https://dersocia.com/"
+},
+
                 {
                     "name": "TahminPro App",
                     "description": "TahminPro App, kullanıcıların döviz kurları ve enflasyon oranlarına ilişkin öngörüleri grafiksel olarak inceleyebileceği modern bir finansal tahmin platformudur. Gerçek verilerle çalışan SARIMA modeli tabanlı bu uygulama, kullanıcı dostu arayüzü, light/dark tema desteği, tam ekran grafik modu ve mobil uyumlu tasarımı ile profesyonel düzeyde bir kullanıcı deneyimi sunar. Bu proje, Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) tarafından 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı kapsamında desteklenmiştir. TahminPro, akademik geçerliliği olan ve finansal veri tahminlerine odaklanan bir öğrenci projesi olarak geliştirilmiştir.",
