@@ -93,6 +93,21 @@ const resources = {
                 },
 
                 {
+  "name": "Derso Mobile App",
+  "description": "Derso Mobile is a cross-platform social learning mobile application developed using React Native. I independently built the entire mobile frontend from scratch with a strong focus on performance, usability, and scalable architecture. The application communicates with backend RESTful APIs to provide real-time data flow and dynamic user interactions. Key features include user authentication, personalized feeds, content sharing, institution discovery, favorites, notifications, and seamless navigation optimized for both iOS and Android platforms.",
+  "images": [
+    { "src": "/assets/derso-mobile/derso-mobile1.png", "alt": "Home Feed Screen" },
+    { "src": "/assets/derso-mobile/derso-mobile2.png", "alt": "Institution Discovery" },
+    { "src": "/assets/derso-mobile/derso-mobile3.png", "alt": "User Profile Screen" },
+    { "src": "/assets/derso-mobile/derso-mobile4.png", "alt": "User Profile Screen" },
+    { "src": "/assets/derso-mobile/derso-mobile5.png", "alt": "Notifications Screen" }
+  ],
+  "url": "https://dersocial.com",
+  "git": "https://dersocial.com"
+},
+
+
+                {
   "name": "Derso",
   "description": "Derso is a modern promotional website built to represent a student-focused social learning platform. I independently developed the entire frontend from scratch using Next.js, TypeScript, and TailwindCSS, with a strong focus on performance, accessibility, and responsive design. The website serves as the main public-facing platform, introducing the product vision, core features, and value proposition while seamlessly integrating with backend APIs for dynamic content where needed.",
   "images": [
@@ -248,6 +263,21 @@ const resources = {
                     "git": "https://github.com/Yusagca/dershanet/blob/main/README.md"
                 },
 
+                    {
+  "name": "Derso Mobil Uygulama",
+  "description": "Derso Mobil, React Native kullanılarak geliştirilen, iOS ve Android platformlarını destekleyen çapraz platform bir sosyal öğrenme uygulamasıdır. Mobil uygulamanın tüm frontend mimarisi performans, kullanıcı deneyimi ve ölçeklenebilirlik odaklı olacak şekilde sıfırdan tarafımca geliştirilmiştir. Uygulama, backend tarafında yer alan RESTful API’lerle dinamik olarak haberleşerek gerçek zamanlı veri akışı sağlar. Kullanıcı girişi, kişiselleştirilmiş akış, içerik paylaşımı, kurum keşfi, favoriler, bildirimler ve akıcı gezinme gibi temel özellikler sunmaktadır.",
+  "images": [
+    { "src": "/assets/derso-mobile/derso-mobile1.png", "alt": "Ana Akış Ekranı" },
+    { "src": "/assets/derso-mobile/derso-mobile2.png", "alt": "Kurum Keşfi" },
+    { "src": "/assets/derso-mobile/derso-mobile3.png", "alt": "Kullanıcı Profili" },
+    { "src": "/assets/derso-mobile/derso-mobile4.png", "alt": "Kullanıcı Profili" },
+    { "src": "/assets/derso-mobile/derso-mobile5.png", "alt": "Bildirimler Ekranı" }
+  ],
+  "url": "https://dersocial.com",
+  "git": "https://dersocial.com"
+},
+
+
                 {
   "name": "Derso",
   "description": "Derso, öğrenci odaklı bir sosyal öğrenme platformunu tanıtmak amacıyla geliştirilen modern bir tanıtım web sitesidir. Tüm frontend yapısı Next.js, TypeScript ve TailwindCSS kullanılarak sıfırdan tarafımca geliştirilmiştir. Performans, erişilebilirlik ve responsive tasarım öncelikli olacak şekilde kurgulanan site, platformun vizyonunu, temel özelliklerini ve sunduğu değeri etkili bir şekilde yansıtırken, gerekli durumlarda backend API’leriyle dinamik olarak etkileşime girmektedir.",
@@ -257,8 +287,8 @@ const resources = {
     { "src": "/assets/derso/derso3.png", "alt": "Platform Hakkında" },
     { "src": "/assets/derso/derso4.png", "alt": "Responsive Tasarım Görünümü" }
   ],
-  "url": "https://dersocia.com/",
-  "git": "https://dersocia.com/"
+  "url": "https://dersocial.com/",
+  "git": "https://dersocial.com/"
 },
 
                 {
